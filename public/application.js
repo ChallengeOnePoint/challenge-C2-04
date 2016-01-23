@@ -43,6 +43,8 @@ function AppController (Kitten, $timeout) {
     this.diaporamaVisible = !this.diaporamaVisible;
 
     if (this.diaporamaVisible) {
+      vm.diaporamaIndex = 0;
+      vm.diaporamaKitten = vm.kittens[vm.diaporamaIndex];
       $timeout(this.diaporamaNext, 3000);
     } else if (this.diaporamaTimeout) {
       // release
@@ -56,7 +58,7 @@ function AppController (Kitten, $timeout) {
       $timeout.cancel(vm.diaporamaTimeout);
     }
 
-    vm.diaporamaTimeout = $timeout(vm.diaporamaNext, 1000);
+    vm.diaporamaTimeout = $timeout(vm.diaporamaNext, 3000);
   };
 
   this.diaporamaNext = function () {
