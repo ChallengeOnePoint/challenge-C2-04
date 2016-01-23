@@ -27,10 +27,10 @@ function kittenFactory ($http) {
 }
 
 function AppController (Kitten) {
-  this.class   = 'small';
+  this.class   = 'display-small';
   this.kittens = Kitten.load();
 }
 
 AppController.prototype.display = function (mode) {
   this.class = 'display-' + mode;
-}
+};
