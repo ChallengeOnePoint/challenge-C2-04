@@ -24,11 +24,6 @@
           alt="{{ app.diaporamaKitten.name }}">
       </div>
     </div>
-    <div class="display-buttons">
-      <button ng-click="app.toggleDiaporama()">Diaporama</button>
-      <button>Grande</button>
-      <button>Petite</button>
-      <button>Liste</button>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="nav navbar-nav navbar-left">
@@ -39,6 +34,7 @@
           <li class="mode-big"><a ng-click="app.display('big')"><i class="glyphicon glyphicon-th-large"></i></a></li>
           <li class="mode-small"><a ng-click="app.display('small')"><i class="glyphicon glyphicon-th"></i></a></li>
           <li class="mode-list"><a ng-click="app.display('list')"><i class="glyphicon glyphicon-th-list"></i></a></li>
+          <li class="mode-diapo"><a ng-click="app.toggleDiaporama()"><i class="glyphicon glyphicon-play"></i></a></li>
         </ul>
       </div>
     </div>
