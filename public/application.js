@@ -26,10 +26,52 @@ function kittenFactory ($http) {
   }
 }
 
-function AppController (Kitten) {
+function AppController (Kitten, $timeout) {
+  var vm = this;
+
   this.class   = 'display-small';
   this.kittens = Kitten.load();
   this.photoClass = 'col-sm-6 col-md-4';
+  this.diaporamaVisible = false;
+  this.diaporamaIndex = 0;
+  this.diaporamaKitten = null;
+  this.diaporamaTimeout = null;
+
+  this.kittens = Kitten.load();
+
+  this.toggleDiaporama = function () {
+    this.diaporamaVisible = !this.diaporamaVisible;
+
+    if (this.diaporamaVisible) {
+      vm.diaporamaIndex = 0;
+      vm.diaporamaKitten = vm.kittens[vm.diaporamaIndex];
+      $timeout(this.diaporamaNext, 3000);
+    } else if (this.diaporamaTimeout) {
+      // release
+      this.diaporamaTimeout();
+    }
+  };
+
+  this.scheduleNextDiaporama = function () {
+    if (vm.diaporamaTimeout) {
+      // release
+      $timeout.cancel(vm.diaporamaTimeout);
+    }
+
+    vm.diaporamaTimeout = $timeout(vm.diaporamaNext, 3000);
+  };
+
+  this.diaporamaNext = function () {
+    vm.diaporamaIndex += 1;
+
+    if (vm.diaporamaIndex >= vm.kittens.length) {
+      vm.diaporamaIndex = 0;
+    }
+
+    vm.diaporamaKitten = vm.kittens[vm.diaporamaIndex];
+
+    vm.scheduleNextDiaporama();
+  };
 }
 
 AppController.prototype.display = function (mode) {
