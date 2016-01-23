@@ -5,7 +5,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
     <script src="application.js"></script>
   </head>
-  <body ng-controller="AppController">
-
+  <body ng-controller="AppController as app">
+    <img ng-repeat="kitten in app.kittens track by $index" ng-src="cats/{{ kitten.picture }}" alt="{{ kitten.name }}">
   </body>
 </html>
