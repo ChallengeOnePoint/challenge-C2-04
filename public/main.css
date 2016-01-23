@@ -8,6 +8,12 @@ body {
   object-fit: cover;
 }
 
+.col-md-4 .cat-img {
+  width: 300px;
+  height: 300px !important;
+  object-fit: cover;
+}
+
 .display-small img {
   width: 100px;
 }
@@ -28,4 +34,13 @@ body {
 .display-big .mode-big > a,
 .display-list .mode-list > a {
   color: #000 !important;
+}
+
+.thumbnail {
+  background-color: none;
+  position: relative;
+}
+
+.thumbnail .caption {
+  font-size: 14px;
 }

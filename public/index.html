@@ -38,18 +38,16 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-6 col-md-4"  ng-repeat="kitten in app.kittens track by $index">
+      <div ng-class="app.photoClass"  ng-repeat="kitten in app.kittens track by $index">
         <div class="thumbnail">
           <img
             class="cat-img"
             ng-src="cats/{{ kitten.picture }}"
             alt="{{ kitten.name }}">
           <div class="caption">
-            <h3>Thumbnail label</h3>
             <p ng-bind="kitten.name"></p>
             <p ng-bind="kitten.age"></p>
             <p ng-bind="kitten.gender"></p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
           </div>
         </div>
       </div>
