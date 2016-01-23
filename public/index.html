@@ -13,8 +13,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css" rel="stylesheet"/>
     <link type="text/css" rel="stylesheet" href="main.css">
   </head>
-  <body ng-controller="AppController as app">
-    <!-- TODO flexslider integration-->
+  <body ng-controller="AppController as app" ng-class="app.class">
     <div class="diaporama-wrapper" ng-show="app.diaporamaVisible">
       <div>
         <button ng-click="app.toggleDiaporama()">&times;</button>
@@ -30,10 +29,35 @@
       <button>Grande</button>
       <button>Petite</button>
       <button>Liste</button>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="nav navbar-nav navbar-left">
+          <a href="/" class="navbar-brand">Catstagram</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="navbar-text">Display mode:</li>
+          <li class="mode-big"><a ng-click="app.display('big')"><i class="glyphicon glyphicon-th-large"></i></a></li>
+          <li class="mode-small"><a ng-click="app.display('small')"><i class="glyphicon glyphicon-th"></i></a></li>
+          <li class="mode-list"><a ng-click="app.display('list')"><i class="glyphicon glyphicon-th-list"></i></a></li>
+        </ul>
+      </div>
     </div>
-    <img
-      ng-repeat="kitten in app.kittens track by $index"
-      ng-src="cats/{{ kitten.picture }}"
-      alt="{{ kitten.name }}">
+
+    <div class="row">
+      <div ng-class="app.photoClass"  ng-repeat="kitten in app.kittens track by $index">
+        <div class="thumbnail">
+          <img
+            class="cat-img"
+            ng-src="cats/{{ kitten.picture }}"
+            alt="{{ kitten.name }}">
+          <div class="caption">
+            <p ng-bind="kitten.name"></p>
+            <p ng-bind="kitten.age"></p>
+            <p ng-bind="kitten.gender"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

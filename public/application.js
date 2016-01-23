@@ -29,6 +29,9 @@ function kittenFactory ($http) {
 function AppController (Kitten, $timeout) {
   var vm = this;
 
+  this.class   = 'display-small';
+  this.kittens = Kitten.load();
+  this.photoClass = 'col-sm-6 col-md-4';
   this.diaporamaVisible = false;
   this.diaporamaIndex = 0;
   this.diaporamaKitten = null;
@@ -67,5 +70,17 @@ function AppController (Kitten, $timeout) {
 
     vm.scheduleNextDiaporama();
   };
-
 }
+
+AppController.prototype.display = function (mode) {
+  this.class = 'display-' + mode;
+  if (mode === 'big') {
+    this.photoClass = 'col-sm-6 col-md-4';
+  }
+  else if (mode === 'small') {
+    this.photoClass = 'col-sm-4 col-md-2';
+  }
+  else {
+    this.photoClass = 'col-md-12';
+  }
+};
