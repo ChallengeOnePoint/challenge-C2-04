@@ -27,6 +27,7 @@ function kittenFactory ($http) {
 }
 
 function AppController (Kitten) {
+  this.class   = 'small';
   this.kittens = Kitten.load();
 }
 
