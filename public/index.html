@@ -28,7 +28,7 @@
       <button ng-click="app.display('list')">Liste</button>
     </div>
     <div class="row">
-      <div class="col-sm-6 col-md-4"  ng-repeat="kitten in app.kittens track by $index">
+      <div ng-class="app.photoClass"  ng-repeat="kitten in app.kittens track by $index">
         <div class="thumbnail">
           <img
             class="cat-img"
