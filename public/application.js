@@ -35,10 +35,10 @@ function AppController (Kitten) {
 AppController.prototype.display = function (mode) {
   this.class = 'display-' + mode;
   if (mode === 'big') {
-    this.photoClass = 'col-sm-6 col-md-4';
+    this.photoClass = 'col-sm-6 col-md-4 col-big';
   }
   else if (mode === 'small') {
-    this.photoClass = 'col-sm-4 col-md-2';
+    this.photoClass = 'col-sm-4 col-md-2 col-small';
   }
   else {
     //list view

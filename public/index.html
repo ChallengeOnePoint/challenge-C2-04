@@ -38,20 +38,17 @@
     </div>
 
     <div class="row">
-      <div ng-class="app.photoClass"  ng-repeat="kitten in app.kittens track by $index">
-        <div class="thumbnail">
-          <img
-            class="cat-img"
-            ng-src="cats/{{ kitten.picture }}"
-            alt="{{ kitten.name }}">
-          <div class="caption">
-            <p ng-bind="kitten.name"></p>
-            <p ng-bind="kitten.age"></p>
-            <p ng-bind="kitten.gender"></p>
-          </div>
+      <div ng-class="app.photoClass" class="cat-wrap" ng-repeat="kitten in app.kittens track by $index">
+        <img
+          class="cat-img"
+          ng-src="cats/{{ kitten.picture }}"
+          alt="{{ kitten.name }}">
+        <div class="caption">
+          <p ng-bind="kitten.name"></p>
+          <p ng-bind="kitten.age"></p>
+          <p ng-bind="kitten.gender"></p>
         </div>
       </div>
     </div>
-
   </body>
 </html>
