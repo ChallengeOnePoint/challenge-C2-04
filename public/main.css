@@ -19,3 +19,13 @@ body {
 .display-list img {
   width: 50px;
 }
+
+.navbar-right a {
+  cursor: pointer;
+}
+
+.display-small .mode-small > a,
+.display-big .mode-big > a,
+.display-list .mode-list > a {
+  color: #000 !important;
+}
