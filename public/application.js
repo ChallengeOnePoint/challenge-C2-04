@@ -26,6 +26,46 @@ function kittenFactory ($http) {
   }
 }
 
-function AppController (Kitten) {
+function AppController (Kitten, $timeout) {
+  var vm = this;
+
+  this.diaporamaVisible = false;
+  this.diaporamaIndex = 0;
+  this.diaporamaKitten = null;
+  this.diaporamaTimeout = null;
+
   this.kittens = Kitten.load();
+
+  this.toggleDiaporama = function () {
+    this.diaporamaVisible = !this.diaporamaVisible;
+
+    if (this.diaporamaVisible) {
+      $timeout(this.diaporamaNext, 3000);
+    } else if (this.diaporamaTimeout) {
+      // release
+      this.diaporamaTimeout();
+    }
+  };
+
+  this.scheduleNextDiaporama = function () {
+    if (vm.diaporamaTimeout) {
+      // release
+      $timeout.cancel(vm.diaporamaTimeout);
+    }
+
+    vm.diaporamaTimeout = $timeout(vm.diaporamaNext, 1000);
+  };
+
+  this.diaporamaNext = function () {
+    vm.diaporamaIndex += 1;
+
+    if (vm.diaporamaIndex >= vm.kittens.length) {
+      vm.diaporamaIndex = 0;
+    }
+
+    vm.diaporamaKitten = vm.kittens[vm.diaporamaIndex];
+
+    vm.scheduleNextDiaporama();
+  };
+
 }
