@@ -1,5 +1,5 @@
-.display-buttons {
-  float: right;
+body {
+  padding-top: 70px;
 }
 
 .cat-img {
@@ -24,4 +24,14 @@
 
 .display-list img {
   width: 50px;
+}
+
+.thumbnail {
+  background-color: none;
+  position: relative;
+}
+
+.thumbnail .caption {
+  font-size: 14px;
+
 }
