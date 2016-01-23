@@ -2,10 +2,23 @@
 <html lang="en" ng-app="app">
   <head>
     <title>Kitty Gallery</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="//cdn.rawgit.com/woothemes/FlexSlider/master/jquery.flexslider-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+    <script src="//cdn.rawgit.com/thenikso/angular-flexslider/master/angular-flexslider.js"></script>
     <script src="application.js"></script>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css" rel="stylesheet"/>
   </head>
   <body ng-controller="AppController as app">
+    <!-- TODO flexslider integration-->
+    <!--
+    <flex-slider slide="kitten in app.kittens track by $index">
+      <li>
+        <img ng-src="cats/{{ kitten.picture }}" alt="{{ kitten.name }}"/>
+      </li>
+    </flex-slider>
+    -->
     <img ng-repeat="kitten in app.kittens track by $index" ng-src="cats/{{ kitten.picture }}" alt="{{ kitten.name }}">
   </body>
 </html>
