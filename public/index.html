@@ -9,9 +9,9 @@
   </head>
   <body ng-controller="AppController as app" ng-class="app.class">
     <div class="display-buttons">
-      <button>Grande</button>
-      <button>Petite</button>
-      <button>Liste</button>
+      <button ng-click="app.display('big')">Grande</button>
+      <button ng-click="app.display('small')">Petite</button>
+      <button ng-click="app.display('list')">Liste</button>
     </div>
     <img
       ng-repeat="kitten in app.kittens track by $index"

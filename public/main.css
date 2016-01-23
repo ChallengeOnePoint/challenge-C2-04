@@ -1,3 +1,15 @@
 .display-buttons {
   float: right;
 }
+
+.display-small img {
+  width: 100px;
+}
+
+.display-big img {
+  width: 500px;
+}
+
+.display-list img {
+  width: 50px;
+}

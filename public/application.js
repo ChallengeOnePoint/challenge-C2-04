@@ -29,3 +29,7 @@ function kittenFactory ($http) {
 function AppController (Kitten) {
   this.kittens = Kitten.load();
 }
+
+AppController.prototype.display = function (mode) {
+  this.class = 'display-' + mode;
+}
