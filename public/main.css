@@ -2,6 +2,12 @@
   float: right;
 }
 
+.cat-img {
+  width: 100px;
+  height: 100px !important;
+  object-fit: cover;
+}
+
 .display-small img {
   width: 100px;
 }
