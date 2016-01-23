@@ -31,7 +31,7 @@ function AppController (Kitten, $timeout) {
 
   this.class   = 'display-small';
   this.kittens = Kitten.load();
-  this.photoClass = 'col-sm-6 col-md-4';
+  this.photoClass = 'col-sm-4 col-md-2';
   this.diaporamaVisible = false;
   this.diaporamaIndex = 0;
   this.diaporamaKitten = null;
