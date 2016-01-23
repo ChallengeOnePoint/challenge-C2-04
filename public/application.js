@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('app', [])
+  .module('app', ['angular-flexslider'])
   .factory('Kitten', kittenFactory)
   .controller('AppController', AppController);
 
