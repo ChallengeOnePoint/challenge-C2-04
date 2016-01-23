@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('app', [])
+  .module('app', ['angular-flexslider'])
   .factory('Kitten', kittenFactory)
   .controller('AppController', AppController);
 
@@ -27,5 +27,10 @@ function kittenFactory ($http) {
 }
 
 function AppController (Kitten) {
+  this.class   = 'small';
   this.kittens = Kitten.load();
+}
+
+AppController.prototype.display = function (mode) {
+  this.class = 'display-' + mode;
 }
