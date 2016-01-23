@@ -41,6 +41,6 @@ AppController.prototype.display = function (mode) {
     this.photoClass = 'col-sm-4 col-md-2';
   }
   else {
-    //list view
+    this.photoClass = 'col-md-12';
   }
 };
