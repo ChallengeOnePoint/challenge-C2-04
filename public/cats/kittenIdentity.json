@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Stephen",
+    "gender": "male",
+    "age": 1,
+    "picture": "imgs/0.jpg"
+  },
+  {
+    "name": "Andrew",
+    "gender": "male",
+    "age": 2,
+    "picture": "imgs/1.jpg"
+  },
+  {
+    "name": "Marilyn",
+    "gender": "female",
+    "age": 12,
+    "picture": "imgs/2.jpg"
+  },
+  {
+    "name": "Andrew",
+    "gender": "male",
+    "age": 10,
+    "picture": "imgs/3.jpg"
+  },
+  {
+    "name": "Margaret",
+    "gender": "female",
+    "age": 13,
+    "picture": "imgs/4.jpg"
+  },
+  {
+    "name": "Peter",
+    "gender": "male",
+    "age": 14,
+    "picture": "imgs/5.jpg"
+  },
+  {
+    "name": "Brenda",
+    "gender": "female",
+    "age": 1,
+    "picture": "imgs/6.jpg"
+  },
+  {
+    "name": "Christina",
+    "gender": "female",
+    "age": 15,
+    "picture": "imgs/7.jpg"
+  },
+  {
+    "name": "Brittany",
+    "gender": "female",
+    "age": 6,
+    "picture": "imgs/8.jpg"
+  },
+  {
+    "name": "Maria",
+    "gender": "female",
+    "age": 7,
+    "picture": "imgs/9.jpg"
+  },
+  {
+    "name": "Lauren",
+    "gender": "female",
+    "age": 8,
+    "picture": "imgs/10.jpg"
+  },
+  {
+    "name": "Jeffrey",
+    "gender": "male",
+    "age": 6,
+    "picture": "imgs/11.jpg"
+  },
+  {
+    "name": "Maria",
+    "gender": "female",
+    "age": 13,
+    "picture": "imgs/12.jpg"
+  },
+  {
+    "name": "Harold",
+    "gender": "male",
+    "age": 11,
+    "picture": "imgs/13.jpg"
+  },
+  {
+    "name": "Nyan",
+    "gender": "male",
+    "age": 42,
+    "picture": "imgs/14.png"
+  },
+  {
+    "name": "Jonathan",
+    "gender": "male",
+    "age": 12,
+    "picture": "imgs/15.jpg"
+  },
+  {
+    "name": "Joe",
+    "gender": "male",
+    "age": 6,
+    "picture": "imgs/16.jpg"
+  },
+  {
+    "name": "Vincent",
+    "gender": "male",
+    "age": 1,
+    "picture": "imgs/17.jpg"
+  },
+  {
+    "name": "Beverly",
+    "gender": "female",
+    "age": 7,
+    "picture": "imgs/18.jpg"
+  },
+  {
+    "name": "Dylan",
+    "gender": "male",
+    "age": 16,
+    "picture": "imgs/19.jpg"
+  },
+  {
+    "name": "Edward",
+    "gender": "male",
+    "age": 11,
+    "picture": "imgs/20.jpg"
+  },
+  {
+    "name": "Carolyn",
+    "gender": "female",
+    "age": 11,
+    "picture": "imgs/21.jpg"
+  },
+  {
+    "name": "Gary",
+    "gender": "male",
+    "age": 1,
+    "picture": "imgs/22.jpg"
+  },
+  {
+    "name": "Adam",
+    "gender": "male",
+    "age": 16,
+    "picture": "imgs/23.jpg"
+  },
+  {
+    "name": "Ralph",
+    "gender": "male",
+    "age": 4,
+    "picture": "imgs/24.jpg"
+  },
+  {
+    "name": "Denise",
+    "gender": "female",
+    "age": 15,
+    "picture": "imgs/25.jpg"
+  },
+  {
+    "name": "Hannah",
+    "gender": "female",
+    "age": 8,
+    "picture": "imgs/26.jpg"
+  },
+  {
+    "name": "Patricia",
+    "gender": "female",
+    "age": 3,
+    "picture": "imgs/27.jpg"
+  },
+  {
+    "name": "Kenneth",
+    "gender": "male",
+    "age": 9,
+    "picture": "imgs/28.jpg"
+  },
+  {
+    "name": "Frank",
+    "gender": "male",
+    "age": 10,
+    "picture": "imgs/29.jpg"
+  },
+  {
+    "name": "Craig",
+    "gender": "male",
+    "age": 16,
+    "picture": "imgs/30.jpg"
+  },
+  {
+    "name": "Craig",
+    "gender": "male",
+    "age": 9,
+    "picture": "imgs/31.jpg"
+  },
+  {
+    "name": "Harold",
+    "gender": "male",
+    "age": 13,
+    "picture": "imgs/32.jpg"
+  },
+  {
+    "name": "Justin",
+    "gender": "male",
+    "age": 9,
+    "picture": "imgs/33.jpg"
+  },
+  {
+    "name": "Jordan",
+    "gender": "male",
+    "age": 8,
+    "picture": "imgs/34.jpg"
+  },
+  {
+    "name": "Keith",
+    "gender": "male",
+    "age": 16,
+    "picture": "imgs/35.jpg"
+  },
+  {
+    "name": "Kathleen",
+    "gender": "female",
+    "age": 14,
+    "picture": "imgs/36.jpg"
+  },
+  {
+    "name": "Kathy",
+    "gender": "female",
+    "age": 15,
+    "picture": "imgs/37.jpg"
+  },
+  {
+    "name": "Christian",
+    "gender": "male",
+    "age": 4,
+    "picture": "imgs/38.jpg"
+  },
+  {
+    "name": "Samantha",
+    "gender": "female",
+    "age": 14,
+    "picture": "imgs/39.jpg"
+  },
+  {
+    "name": "Jacqueline",
+    "gender": "female",
+    "age": 1,
+    "picture": "imgs/40.jpg"
+  },
+  {
+    "name": "Rachel",
+    "gender": "female",
+    "age": 6,
+    "picture": "imgs/41.jpg"
+  }
+]
