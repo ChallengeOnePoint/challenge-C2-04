@@ -1,12 +1,14 @@
 body {
   padding-top: 70px;
   margin: 0 10%;
+  background-color: #444444;
 }
 
 .cat-img {
   width: 100px;
   height: 100px !important;
   object-fit: cover;
+  box-shadow: 1px 1px 12px #555;
 }
 
 .col-md-4 .cat-img {
@@ -44,7 +46,7 @@ body {
 }
 
 .thumbnail {
-  background-color: none;
+  background-color: #dddedf;
   position: relative;
 }
 
