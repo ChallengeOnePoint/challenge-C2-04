@@ -4,8 +4,12 @@
     <title>Kitty Gallery</title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
     <script src="application.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
   </head>
-  <body ng-controller="AppController as app">
-    <img ng-repeat="kitten in app.kittens track by $index" ng-src="cats/{{ kitten.picture }}" alt="{{ kitten.name }}">
+  <body ng-controller="AppController as app" ng-class="app.class">
+    <img
+      ng-repeat="kitten in app.kittens track by $index"
+      ng-src="cats/{{ kitten.picture }}"
+      alt="{{ kitten.name }}">
   </body>
 </html>
