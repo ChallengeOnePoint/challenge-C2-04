@@ -1,3 +1,9 @@
 .display-buttons {
   float: right;
 }
+
+.cat-img {
+  width: 100px;
+  height: 100px !important;
+  object-fit: cover;
+}
